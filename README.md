@@ -45,7 +45,7 @@ grunt project-release
 ```
 ===
 
-наблюдает за стилями в project/
+#### наблюдает за стилями в project/
 ```
 grunt pw
 grunt project-watch
