@@ -1,11 +1,12 @@
 # Readme
 
-## Установка nodejs и gulp
+## Установка nodejs и grunt
 http://nodejs.org/  
 npm install -g grunt-cli
 
 ## Установка зависимостей
 npm install
+===
 
 ### Задачи для layout/
 #### Собирает статику в layout/
