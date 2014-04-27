@@ -45,6 +45,7 @@ grunt project-build
 
 #### собирает и сжимает статику в project/
 ```
+grunt release
 grunt pr
 grunt project-release
 ```

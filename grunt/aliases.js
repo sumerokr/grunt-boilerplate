@@ -7,6 +7,7 @@ module.exports = {
 
     'default': ['project-build'], // собирает статику в project/
     'pb': ['project-build'], // собирает статику в project/
+    'release': ['project-release'], // собирает и сжимает статику в project/
     'pr': ['project-release'], // собирает и сжимает статику в project/
     'pw': ['project-watch'], // наблюдает за файлами в project/
 
