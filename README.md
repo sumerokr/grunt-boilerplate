@@ -34,6 +34,13 @@ grunt layout-watch
 ```
 ===
 
+#### очищает целевые папки в layout/
+```
+grunt lc
+grunt clean:layout
+```
+===
+
 ### Задачи для project/
 #### собирает статику в project/
 ```
@@ -55,6 +62,13 @@ grunt project-release
 ```
 grunt pw
 grunt project-watch
+```
+===
+
+#### очищает целевые папки в project/
+```
+grunt pc
+grunt clean:project
 ```
 ===
 
