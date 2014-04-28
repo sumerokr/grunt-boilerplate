@@ -41,14 +41,7 @@ module.exports = {
     ],
 
     // наблюдает за файлами в layout/
-    'layout-watch': [
-        'watch:layoutLess', // наблюдает за стилями в layout/
-        'watch:layoutFonts', // наблюдает за шрифтами в layout/
-        'watch:layoutImg', // наблюдает за изображениями в layout/
-        'watch:layoutJs', // наблюдает за скриптами в layout/
-        'watch:layoutVideo', // наблюдает за видео в layout/
-        'watch:layoutLivereload' // запускает перезагрузку измененных файлов в layout/
-    ],
+    'layout-watch': ['concurrent:layout'],
 
     // собирает статику в project/
     'project-build': [
@@ -80,12 +73,5 @@ module.exports = {
     ],
 
     // наблюдает за файлами в project/
-    'project-watch': [
-        'watch:projectLess', // наблюдает за стилями в project/
-        'watch:projectFonts', // наблюдает за шрифтами в project/
-        'watch:projectImg', // наблюдает за изображениями в project/
-        'watch:projectJs', // наблюдает за скриптами в project/
-        'watch:projectVideo', // наблюдает за видео в project/
-        'watch:projectLivereload' // запускает перезагрузку измененных файлов в project/
-    ],
+    'project-watch': ['concurrent:project']
 }
