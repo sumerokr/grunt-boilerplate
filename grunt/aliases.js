@@ -4,12 +4,14 @@ module.exports = {
     'lb': ['layout-build'], // собирает статику в layout/
     'lr': ['layout-release'], // собирает и сжимает статику в layout/
     'lw': ['layout-watch'], // наблюдает за файлами в layout/
+    'lc': ['clean:layout'], // очищает целевые папки в layout/
 
     'default': ['project-build'], // собирает статику в project/
     'pb': ['project-build'], // собирает статику в project/
     'release': ['project-release'], // собирает и сжимает статику в project/
     'pr': ['project-release'], // собирает и сжимает статику в project/
     'pw': ['project-watch'], // наблюдает за файлами в project/
+    'pc': ['clean:project'], // очищает целевые папки в project/
 
     // собирает статику в layout/
     'layout-build': [
@@ -24,7 +26,7 @@ module.exports = {
 
     // собирает и сжимает статику в layout/
     'layout-release': [
-        'clean:layout', // предварительно очищает целевые папки
+        'clean:layout', // очищает целевые папки
 
         'less:layout', // компилирует .less файлы в единый .css файл
         'autoprefixer:layout', // добавляет в .css файл браузерные префиксы
@@ -56,7 +58,7 @@ module.exports = {
 
     // собирает и сжимает статику в project/
     'project-release': [
-        'clean:project', // предварительно очищает целевые папки
+        'clean:project', // очищает целевые папки
 
         'less:project', // компилирует .less файлы в единый .css файл
         'autoprefixer:project', // добавляет в .css файл браузерные префиксы
