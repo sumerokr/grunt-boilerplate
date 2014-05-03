@@ -1,75 +1,28 @@
-# Readme
+# Grunt-boilerplate
 
 ## Установка nodejs и grunt
-http://nodejs.org/  
-```
-npm install -g grunt-cli
-```
+http://nodejs.org/
+
+    npm install -g grunt-cli
 
 ## Установка зависимостей
-```
-npm install
-```
-===
+    npm install
 
-### Задачи для layout/
-#### Собирает статику в layout/
-```
-grunt lb
-grunt layout-build
-```
-===
+## Задачи
+### собирает статику
+    grunt
+- - -
 
-#### собирает и сжимает статику в layout/
-```
-grunt lr
-grunt layout-release
-```
-===
+### собирает и сжимает статику
+    grunt release
+- - -
 
-#### наблюдает за файлами в layout/
-```
-grunt lw
-grunt layout-watch
-```
-===
+### наблюдает за файлами
+    grunt watch
+- - -
 
-#### очищает целевые папки в layout/
-```
-grunt lc
-grunt clean:layout
-```
-===
+#### очищает целевые папки
+    grunt clean
+- - -
 
-### Задачи для project/
-#### собирает статику в project/
-```
-grunt
-grunt pb
-grunt project-build
-```
-===
-
-#### собирает и сжимает статику в project/
-```
-grunt release
-grunt pr
-grunt project-release
-```
-===
-
-#### наблюдает за стилями в project/
-```
-grunt pw
-grunt project-watch
-```
-===
-
-#### очищает целевые папки в project/
-```
-grunt pc
-grunt clean:project
-```
-===
-
-Подробнее в grunt/aliases.js
+подробнее в grunt-tasks/_aliases.js
