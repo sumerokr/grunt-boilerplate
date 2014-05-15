@@ -3,10 +3,6 @@ module.exports = function(grunt) {
 
   // конфигурация задачи
   var config = {
-    options: {
-      optimizationLevel: 2, // степень сжатия (1 - 7)
-      pngquant: true // компрессия .png файлов
-    },
     main: {
       expand: true,
       cwd: '<%= _src %>img/',
