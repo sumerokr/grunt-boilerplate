@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     // все скрипты для вставки перед закрывающим </body>
     libs: {
       src: '<%= concat.main.dest %>',
-      dest: '<%= static %>js/app.min.js'
+      dest: '<%= concat.main.dest %>'
     }
   };
 
