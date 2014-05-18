@@ -3,6 +3,9 @@ module.exports = function(grunt) {
 
   // конфигурация задачи
   var config = {
+    options: {
+      optimizationLevel: 3 // степерь сжатия (0 - 7)
+    },
     main: {
       expand: true,
       cwd: '<%= _src %>img/',
