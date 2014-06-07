@@ -7,10 +7,6 @@ module.exports = function(grunt) {
       src: [
         '<%= _src %>js/vendor/jquery.js',
         '<%= _src %>js/vendor/holder.js',
-        '<%= _src %>js/vendor/jquery.fancybox.js',
-        '<%= _src %>js/vendor/jquery.inputmask.js',
-        '<%= _src %>js/vendor/jquery.placeholder.js',
-        '<%= _src %>js/vendor/jquery.validate.js',
         '<%= _src %>js/main.js'
       ],
       // .min добавляется сейчас, до минификации умышленно
